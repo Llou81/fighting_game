@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fighting_Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: relative; display: inline-block;">
+        <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+            <div style="position: relative; width: 100%; display: flex; justify-content: flex-end; border-top: 4px solid aliceblue; border-bottom: 4px solid aliceblue; border-left: 4px solid aliceblue;">
+                <div style="background-color: red; height: 30px; width: 100%;"></div>
+                <div id='player1Health' style="position: absolute; background-color: #818cf8; top: 0; right: 0; bottom: 0; width: 100%;"></div>
+            </div>
+            <div id="timer" style="background-color: black; color: aliceblue; height: 50px; width: 100px; flex-shrink: 0; display: flex; justify-content: center; align-items: center; border: 4px solid aliceblue;">
+            
+            </div>
+            <div style="position: relative; width: 100%; border-top: 4px solid aliceblue; border-bottom: 4px solid aliceblue; border-right: 4px solid aliceblue;">
+                <div style="background-color: red; height: 30px;"></div>
+                <div id='player2Health' style="position: absolute; background-color: #818cf8; top: 0; left: 0; right: 0; bottom: 0;"></div>
+            </div>
+        </div>
+        <div id="result" style="position: absolute; display: flex; justify-content: center; align-items: center; color: aliceblue; width: 100%; height: 100%;"></div>
+        <canvas>
+
+        </canvas> 
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+            integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer">
+    </script>
+    <script src='js/utils.js'></script>
+    <script src='js/classes.js'></script>
+    <script src='main.js'></script>
+</body>
+</html>
